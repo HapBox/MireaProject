@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mirea.matyash.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_clalculator"
+        android:name="com.mirea.matyash.mireaproject.nav_clalculator"
+        android:label="fragment_nav_clalculator"
+        tools:layout="@layout/fragment_nav_clalculator" />
+    <fragment
+        android:id="@+id/nav_browser"
+        android:name="com.mirea.matyash.mireaproject.nav_browser"
+        android:label="fragment_nav_browser"
+        tools:layout="@layout/fragment_nav_browser" />
+    <fragment
+        android:id="@+id/simplePlayer"
+        android:name="com.mirea.matyash.mireaproject.SimplePlayer"
+        android:label="fragment_simple_player"
+        tools:layout="@layout/fragment_simple_player" />
+
+</navigation>
