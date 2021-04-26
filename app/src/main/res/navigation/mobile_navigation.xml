@@ -25,5 +25,20 @@
         android:name="com.mirea.matyash.mireaproject.SimplePlayer"
         android:label="fragment_simple_player"
         tools:layout="@layout/fragment_simple_player" />
+    <fragment
+        android:id="@+id/camera"
+        android:name="com.mirea.matyash.mireaproject.Сamera"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/sensors"
+        android:name="com.mirea.matyash.mireaproject.sensors"
+        android:label="fragment_sensors"
+        tools:layout="@layout/fragment_sensors" />
+    <fragment
+        android:id="@+id/audioRecorder"
+        android:name="com.mirea.matyash.mireaproject.AudioRecorder"
+        android:label="fragment_audio_recorder"
+        tools:layout="@layout/fragment_audio_recorder" />
 
 </navigation>

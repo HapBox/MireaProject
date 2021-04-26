@@ -17,5 +17,17 @@
         <item
             android:id="@+id/simplePlayer"
             android:title="Player" />
+
+        <item
+            android:id="@+id/sensors"
+            android:title="Accelerometr"/>
+
+        <item
+            android:id="@+id/camera"
+            android:title="Camera" />
+
+        <item
+            android:id="@+id/audioRecorder"
+            android:title="Audio Recorder" />
     </group>
 </menu>
