@@ -45,5 +45,10 @@
         android:name="com.mirea.matyash.mireaproject.settings"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/stories"
+        android:name="com.mirea.matyash.mireaproject.stories"
+        android:label="fragment_stories"
+        tools:layout="@layout/fragment_stories" />
 
 </navigation>
