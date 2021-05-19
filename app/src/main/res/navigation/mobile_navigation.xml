@@ -40,5 +40,10 @@
         android:name="com.mirea.matyash.mireaproject.AudioRecorder"
         android:label="fragment_audio_recorder"
         tools:layout="@layout/fragment_audio_recorder" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.mirea.matyash.mireaproject.settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 
 </navigation>
