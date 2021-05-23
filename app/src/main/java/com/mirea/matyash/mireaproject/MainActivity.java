@@ -1,5 +1,6 @@
 package com.mirea.matyash.mireaproject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -24,7 +26,10 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    public static String email;
+    public static NavigationView navigationView;
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,14 +44,18 @@ public class MainActivity extends AppCompatActivity {
                 ds.show(getSupportFragmentManager(), "mirea");
             }
         });
+        fab.setVisibility(View.GONE);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_browser, R.id.nav_clalculator, R.id.simplePlayer, R.id.sensors, R.id.camera, R.id.audioRecorder, R.id.settings, R.id.stories)
+                R.id.loginAuth, R.id.nav_home, R.id.nav_browser, R.id.nav_clalculator,
+                R.id.simplePlayer, R.id.sensors, R.id.camera, R.id.audioRecorder, R.id.settings,
+                R.id.stories)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        navigationView.setVisibility(View.GONE);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
@@ -71,6 +80,10 @@ public class MainActivity extends AppCompatActivity {
     public void onClickStop(View v){
         stopService(
                 new Intent(MainActivity.this, PlayerService.class));
+    }
+
+    private void goToHome(){
+        android.app.FragmentTransaction ftrans = getFragmentManager().beginTransaction();
     }
 
     @Override

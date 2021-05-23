@@ -3,8 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/loginAuth">
 
+    <fragment
+        android:id="@+id/loginAuth"
+        android:name="com.mirea.matyash.mireaproject.LoginAuth"
+        android:label="fragment_login_auth"
+        tools:layout="@layout/fragment_login_auth" >
+        <action
+            android:id="@+id/action_loginAuth_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/nav_home"
         android:name="com.mirea.matyash.mireaproject.ui.home.HomeFragment"
