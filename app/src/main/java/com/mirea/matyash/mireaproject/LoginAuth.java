@@ -62,7 +62,6 @@ public class LoginAuth extends Fragment implements View.OnClickListener {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
                             MainActivity.email = email;
-                            MainActivity.navigationView.setVisibility(View.VISIBLE);
                             NavHostFragment.findNavController(LoginAuth.this)
                                     .navigate(R.id.action_loginAuth_to_nav_home);
                         } else {
@@ -89,7 +88,6 @@ public class LoginAuth extends Fragment implements View.OnClickListener {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
-                            MainActivity.navigationView.setVisibility(View.VISIBLE);
                             MainActivity.email = email;
                             NavHostFragment.findNavController(LoginAuth.this)
                                     .navigate(R.id.action_loginAuth_to_nav_home);

@@ -19,6 +19,8 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        MainActivity.fab.setVisibility(View.VISIBLE);
+        MainActivity.navigationView.setVisibility(View.VISIBLE);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         TextView welcomeText = root.findViewById(R.id.tv_emailWelcome);
         welcomeText.setText(MainActivity.email);
