@@ -37,5 +37,9 @@
         <item
             android:id="@+id/stories"
             android:title="Stories" />
+
+        <item
+            android:id="@+id/mapMirea"
+            android:title="Map MIREA" />
     </group>
 </menu>

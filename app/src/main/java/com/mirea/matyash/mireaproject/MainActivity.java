@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.loginAuth, R.id.nav_home, R.id.nav_browser, R.id.nav_clalculator,
                 R.id.simplePlayer, R.id.sensors, R.id.camera, R.id.audioRecorder, R.id.settings,
-                R.id.stories)
+                R.id.stories, R.id.mapMirea)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

@@ -59,5 +59,10 @@
         android:name="com.mirea.matyash.mireaproject.stories"
         android:label="fragment_stories"
         tools:layout="@layout/fragment_stories" />
+    <fragment
+        android:id="@+id/mapMirea"
+        android:name="com.mirea.matyash.mireaproject.MapMirea"
+        android:label="fragment_map_mirea"
+        tools:layout="@layout/fragment_map_mirea" />
 
 </navigation>
